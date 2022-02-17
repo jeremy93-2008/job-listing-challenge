@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import bgImage from '../images/bg-header-desktop.svg'
 import { Search } from '../components/search'
 import { useAtom } from 'jotai'
 import { FilterAtom } from '../store'
 
 export function Header() {
-    const [filter, setFilter] = useAtom(FilterAtom)
+    const [filter] = useAtom(FilterAtom)
     return (
         <div className={`flex relative z-20 pt-[66px] justify-center`}>
             <div
